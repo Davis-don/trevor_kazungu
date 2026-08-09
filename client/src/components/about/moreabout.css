@@ -82,7 +82,7 @@
 }
 
 /* ============================================
-   TEXT STYLES - LARGER FONTS
+   TEXT STYLES - DOUBLED FONTS
    ============================================ */
 .moreabout-text {
   display: flex;
@@ -91,43 +91,43 @@
 }
 
 .moreabout-number {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -4px;
 }
 
 .moreabout-title {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: 700;
   margin: 0;
   line-height: 1.1;
 }
 
 .moreabout-divider {
-  width: 80px;
-  height: 5px;
+  width: 100px;
+  height: 6px;
   border-radius: 3px;
 }
 
 .moreabout-description {
-  font-size: 1.6rem;
-  line-height: 1.9;
-  max-width: 600px;
+  font-size: 2rem;
+  line-height: 2;
+  max-width: 650px;
   font-weight: 300;
 }
 
 .moreabout-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
   margin-top: 0.5rem;
 }
 
 .tag {
-  padding: 0.7rem 1.8rem;
+  padding: 0.8rem 2rem;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -139,7 +139,7 @@
 .moreabout-image {
   position: relative;
   width: 100%;
-  max-width: 550px;
+  max-width: 600px;
   aspect-ratio: 4/3;
   border-radius: 20px;
   overflow: hidden;
@@ -188,7 +188,7 @@
 }
 
 /* ============================================
-   RESPONSIVE DESIGN - MORE RESPONSIVE
+   RESPONSIVE DESIGN - DOUBLED SIZES
    ============================================ */
 
 /* Large screens (1200px - 1400px) */
@@ -203,19 +203,19 @@
   }
 
   .moreabout-title {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .moreabout-number {
-    font-size: 5.5rem;
+    font-size: 7rem;
   }
 
   .moreabout-description {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .moreabout-image {
-    max-width: 500px;
+    max-width: 550px;
   }
 }
 
@@ -231,25 +231,25 @@
   }
 
   .moreabout-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .moreabout-number {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .moreabout-description {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     max-width: 100%;
   }
 
   .moreabout-image {
-    max-width: 450px;
+    max-width: 500px;
   }
 
   .tag {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.7rem 1.6rem;
   }
 }
 
@@ -265,30 +265,30 @@
   }
 
   .moreabout-title {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
   }
 
   .moreabout-number {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   .moreabout-description {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.8;
   }
 
   .moreabout-divider {
-    width: 70px;
-    height: 4px;
+    width: 80px;
+    height: 5px;
   }
 
   .moreabout-image {
-    max-width: 400px;
+    max-width: 450px;
   }
 
   .tag {
-    font-size: 0.85rem;
-    padding: 0.5rem 1.3rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
   }
 }
 
@@ -310,22 +310,24 @@
   }
 
   .moreabout-title {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
 
   .moreabout-number {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
 
   .moreabout-divider {
     margin: 0 auto;
+    width: 80px;
+    height: 5px;
   }
 
   .moreabout-description {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-align: center;
     max-width: 100%;
-    line-height: 1.8;
+    line-height: 1.9;
   }
 
   .moreabout-tags {
@@ -333,15 +335,15 @@
   }
 
   .moreabout-image {
-    max-width: 380px;
+    max-width: 400px;
     width: 100%;
     aspect-ratio: 4/3;
     border-radius: 16px;
   }
 
   .tag {
-    font-size: 0.85rem;
-    padding: 0.5rem 1.3rem;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
   }
 
   /* Alternate image position on mobile */
@@ -359,10 +361,54 @@
   }
 }
 
-/* Small mobile screens (480px - 600px) */
+/* Small mobile screens (480px - 600px) - DOUBLED */
 @media (max-width: 600px) {
   .moreabout-section {
     padding: 3rem 1.5rem;
+  }
+
+  .moreabout-content {
+    gap: 2.5rem;
+  }
+
+  .moreabout-title {
+    font-size: 3.2rem;
+  }
+
+  .moreabout-number {
+    font-size: 4.5rem;
+    letter-spacing: -2px;
+  }
+
+  .moreabout-description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .moreabout-divider {
+    width: 70px;
+    height: 5px;
+  }
+
+  .moreabout-image {
+    max-width: 350px;
+    border-radius: 14px;
+  }
+
+  .tag {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .moreabout-tags {
+    gap: 0.8rem;
+  }
+}
+
+/* Small mobile screens (320px - 480px) - DOUBLED */
+@media (max-width: 480px) {
+  .moreabout-section {
+    padding: 2.5rem 1.2rem;
   }
 
   .moreabout-content {
@@ -370,16 +416,16 @@
   }
 
   .moreabout-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .moreabout-number {
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: -2px;
   }
 
   .moreabout-description {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.7;
   }
 
@@ -389,57 +435,52 @@
   }
 
   .moreabout-image {
-    max-width: 320px;
-    border-radius: 14px;
+    max-width: 300px;
+    border-radius: 12px;
   }
 
   .tag {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     padding: 0.4rem 1rem;
   }
 
   .moreabout-tags {
-    gap: 0.7rem;
+    gap: 0.6rem;
   }
 }
 
-/* Small mobile screens (320px - 480px) */
-@media (max-width: 480px) {
+/* Extra small screens (below 320px) - DOUBLED */
+@media (max-width: 320px) {
   .moreabout-section {
-    padding: 2.5rem 1rem;
-  }
-
-  .moreabout-content {
-    gap: 1.8rem;
+    padding: 2rem 0.8rem;
   }
 
   .moreabout-title {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
   .moreabout-number {
-    font-size: 3rem;
-    letter-spacing: -2px;
+    font-size: 3.5rem;
   }
 
   .moreabout-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
   }
 
   .moreabout-divider {
     width: 50px;
-    height: 3px;
+    height: 4px;
   }
 
   .moreabout-image {
-    max-width: 280px;
-    border-radius: 12px;
+    max-width: 250px;
+    border-radius: 10px;
   }
 
   .tag {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.9rem;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
   }
 
   .moreabout-tags {
@@ -447,46 +488,7 @@
   }
 }
 
-/* Extra small screens (below 320px) */
-@media (max-width: 320px) {
-  .moreabout-section {
-    padding: 2rem 0.8rem;
-  }
-
-  .moreabout-title {
-    font-size: 1.8rem;
-  }
-
-  .moreabout-number {
-    font-size: 2.5rem;
-  }
-
-  .moreabout-description {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .moreabout-divider {
-    width: 40px;
-    height: 3px;
-  }
-
-  .moreabout-image {
-    max-width: 220px;
-    border-radius: 10px;
-  }
-
-  .tag {
-    font-size: 0.65rem;
-    padding: 0.25rem 0.7rem;
-  }
-
-  .moreabout-tags {
-    gap: 0.4rem;
-  }
-}
-
-/* Landscape orientation for mobile */
+/* Landscape orientation for mobile - DOUBLED */
 @media (max-height: 600px) and (orientation: landscape) {
   .moreabout-section {
     padding: 2.5rem 2rem;
@@ -498,27 +500,27 @@
   }
 
   .moreabout-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 
   .moreabout-number {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .moreabout-description {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
   }
 
   .moreabout-image {
-    max-width: 300px;
+    max-width: 320px;
     aspect-ratio: 4/3;
     border-radius: 14px;
   }
 
   .tag {
-    font-size: 0.75rem;
-    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 1.2rem;
   }
 }
 
