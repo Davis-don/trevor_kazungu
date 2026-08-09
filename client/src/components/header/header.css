@@ -1,6 +1,68 @@
-.overall-main-header-component{
-background-color: black;
+/* ============================================
+   HEADER - Fixed with Hide/Show on Scroll
+   ============================================ */
+.overall-main-header-component {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-.container-section-bottom{
-padding-block: 1rem;
+
+/* Show header (default state) */
+.overall-main-header-component.show {
+  transform: translateY(0);
+}
+
+/* Hide header when scrolling down */
+.overall-main-header-component.hide {
+  transform: translateY(-100%);
+}
+
+/* Add shadow when scrolled */
+.overall-main-header-component.scrolled {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   HEADER SECTIONS
+   ============================================ */
+.top-section-header-container {
+  width: 100%;
+}
+
+.container-section-bottom {
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bottom-section-header-section-container {
+  display: flex;
+  align-items: center;
+}
+
+.navlinks-section-container {
+  display: flex;
+  align-items: center;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .container-section-bottom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
