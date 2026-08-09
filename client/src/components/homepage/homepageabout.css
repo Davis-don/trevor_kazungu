@@ -3,7 +3,7 @@
    ============================================ */
 .overall-about-container {
   width: 100%;
-  padding: 6rem 0;
+  padding: 8rem 0;
   background: #000000;
   position: relative;
   overflow: hidden;
@@ -13,12 +13,12 @@
    INNER WRAPPER
    ============================================ */
 .about-inner-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 6rem;
   align-items: center;
   position: relative;
   z-index: 1;
@@ -37,11 +37,11 @@
 .about-image-container {
   position: relative;
   width: 100%;
-  max-width: 550px;
+  max-width: 650px;
   aspect-ratio: 4/5;
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
   background: #000000;
 }
 
@@ -77,16 +77,16 @@
 /* Experience Badge - Clean white */
 .about-experience-badge {
   position: absolute;
-  bottom: -20px;
-  right: -10px;
+  bottom: -25px;
+  right: -15px;
   background: #ffffff;
   color: #000000;
-  padding: 1.2rem 1.8rem;
-  border-radius: 15px;
+  padding: 1.8rem 2.5rem;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
   animation: floatBadge 3s ease-in-out infinite;
   z-index: 5;
 }
@@ -96,24 +96,24 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
   }
 }
 
 .badge-number {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #000000;
   line-height: 1;
 }
 
 .badge-text {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #333333;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 0.3rem;
+  letter-spacing: 2px;
+  margin-top: 0.5rem;
 }
 
 /* ============================================
@@ -122,20 +122,20 @@
 .about-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .about-section-label {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   margin-bottom: 0.3rem;
 }
 
 .about-title {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.2;
@@ -144,13 +144,13 @@
 
 .about-title-highlight {
   color: #ffffff;
-  border-bottom: 3px solid #ffffff;
-  padding-bottom: 0.1rem;
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 0.2rem;
 }
 
 .about-divider {
-  width: 80px;
-  height: 3px;
+  width: 120px;
+  height: 4px;
   background: #ffffff;
   margin: 0.5rem 0;
   border-radius: 2px;
@@ -158,25 +158,25 @@
 
 /* Paragraph text - DOUBLED SIZE */
 .about-description {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #cccccc;
-  line-height: 2;
+  line-height: 2.2;
   margin: 0;
   font-weight: 300;
 }
 
 .about-description-second {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #cccccc;
-  line-height: 2;
+  line-height: 2.2;
   margin: 0;
   font-weight: 300;
 }
 
 .about-description-third {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #cccccc;
-  line-height: 2;
+  line-height: 2.2;
   margin: 0;
   font-weight: 300;
 }
@@ -194,11 +194,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 0.5rem;
-  padding: 2rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   flex-wrap: nowrap;
 }
 
@@ -210,24 +210,24 @@
 }
 
 .stat-number {
-  font-size: 2.8rem;
+  font-size: 4.5rem;
   font-weight: 800;
   color: #ffffff;
   line-height: 1;
 }
 
 .stat-label {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #888888;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 0.3rem;
+  letter-spacing: 2px;
+  margin-top: 0.5rem;
 }
 
 .stat-divider {
-  width: 1px;
-  height: 50px;
+  width: 2px;
+  height: 70px;
   background: rgba(255, 255, 255, 0.15);
   flex-shrink: 0;
 }
@@ -245,118 +245,135 @@
 }
 
 .about-btn-primary {
-  padding: 1.2rem 3.5rem;
+  padding: 1.8rem 4.5rem;
   background: #ffffff;
   color: #000000;
   border: none;
-  border-radius: 50px;
-  font-size: 1.1rem;
+  border-radius: 60px;
+  font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 .about-btn-primary:hover {
   background: #333333;
   color: #ffffff;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN - DOUBLED FONT SIZES
    ============================================ */
 
 /* Large screens (1024px - 1200px) */
 @media (max-width: 1200px) {
   .about-inner-wrapper {
-    gap: 3.5rem;
-    padding: 0 2rem;
+    gap: 4rem;
+    padding: 0 2.5rem;
   }
 
   .about-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 
   .about-description,
   .about-description-second,
   .about-description-third {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .about-image-container {
-    max-width: 480px;
+    max-width: 550px;
   }
 
   .stat-number {
-    font-size: 2.5rem;
+    font-size: 3.8rem;
+  }
+
+  .stat-label {
+    font-size: 1.2rem;
   }
 
   .about-stats {
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
   }
 }
 
 /* Medium screens (768px - 1024px) */
 @media (max-width: 1024px) {
   .overall-about-container {
-    padding: 5rem 0;
+    padding: 6rem 0;
   }
 
   .about-inner-wrapper {
-    gap: 3rem;
-    padding: 0 1.5rem;
+    gap: 3.5rem;
+    padding: 0 2rem;
   }
 
   .about-title {
-    font-size: 3.2rem;
+    font-size: 4.5rem;
   }
 
   .about-description,
   .about-description-second,
   .about-description-third {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .about-image-container {
-    max-width: 420px;
+    max-width: 480px;
   }
 
   .about-section-label {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .stat-number {
-    font-size: 2.2rem;
+    font-size: 3.5rem;
   }
 
   .stat-label {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .about-btn-primary {
-    padding: 1rem 2.8rem;
-    font-size: 1rem;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.4rem;
   }
 
   .about-stats {
-    gap: 1rem;
-    padding: 1.5rem 0;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .badge-number {
+    font-size: 3.2rem;
+  }
+
+  .badge-text {
+    font-size: 1.2rem;
+  }
+
+  .about-experience-badge {
+    padding: 1.5rem 2rem;
   }
 }
 
 /* Tablet screens (600px - 768px) */
 @media (max-width: 768px) {
   .overall-about-container {
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
 
   .about-inner-wrapper {
     grid-template-columns: 1fr;
-    gap: 4rem;
-    padding: 0 1.5rem;
+    gap: 5rem;
+    padding: 0 2rem;
   }
 
   .about-image-wrapper {
@@ -374,7 +391,7 @@
   }
 
   .about-title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     text-align: center;
   }
 
@@ -385,15 +402,15 @@
   .about-description,
   .about-description-second,
   .about-description-third {
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   /* Stats remain in a row on tablet */
   .about-stats {
     justify-content: center;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
+    gap: 2rem;
+    padding: 2.5rem 0;
     flex-wrap: nowrap;
   }
 
@@ -406,11 +423,11 @@
   }
 
   .stat-number {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .stat-label {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .about-cta {
@@ -418,51 +435,55 @@
   }
 
   .about-btn-primary {
-    padding: 1.1rem 3rem;
-    font-size: 1rem;
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
   }
 
   .about-experience-badge {
-    bottom: -15px;
+    bottom: -18px;
     right: 10px;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.8rem;
   }
 
   .badge-number {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 
   .badge-text {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+  }
+
+  .about-section-label {
+    font-size: 1.6rem;
   }
 }
 
 /* Mobile screens (480px - 600px) */
 @media (max-width: 600px) {
   .overall-about-container {
-    padding: 3.5rem 0;
+    padding: 4rem 0;
   }
 
   .about-inner-wrapper {
-    gap: 3rem;
-    padding: 0 1rem;
+    gap: 4rem;
+    padding: 0 1.5rem;
   }
 
   .about-title {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
 
   .about-description,
   .about-description-second,
   .about-description-third {
-    font-size: 1.3rem;
-    line-height: 1.9;
+    font-size: 1.8rem;
+    line-height: 2;
   }
 
   /* Stats remain in a row on mobile */
   .about-stats {
-    gap: 0.8rem;
-    padding: 1.2rem 0;
+    gap: 1rem;
+    padding: 2rem 0;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
@@ -473,16 +494,16 @@
   }
 
   .stat-number {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   .stat-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
   }
 
   .stat-divider {
-    height: 35px;
+    height: 45px;
   }
 
   .about-cta {
@@ -492,28 +513,28 @@
 
   .about-btn-primary {
     width: 100%;
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 1.4rem 2.5rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
   .about-experience-badge {
-    bottom: -12px;
+    bottom: -15px;
     right: 5px;
-    padding: 0.8rem 1.2rem;
+    padding: 1rem 1.5rem;
   }
 
   .badge-number {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 
   .badge-text {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .about-section-label {
-    font-size: 0.95rem;
-    letter-spacing: 3px;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
   }
 
   .about-image-container {
@@ -524,34 +545,34 @@
 /* Small mobile screens (320px - 480px) */
 @media (max-width: 480px) {
   .overall-about-container {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
   }
 
   .about-inner-wrapper {
-    gap: 2.5rem;
-    padding: 0 0.8rem;
+    gap: 3.5rem;
+    padding: 0 1.2rem;
   }
 
   .about-section-label {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     letter-spacing: 3px;
   }
 
   .about-title {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 
   .about-description,
   .about-description-second,
   .about-description-third {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.6rem;
+    line-height: 1.9;
   }
 
   /* Stats remain in a row on small mobile */
   .about-stats {
-    gap: 0.5rem;
-    padding: 1rem 0;
+    gap: 0.8rem;
+    padding: 1.5rem 0;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
@@ -562,16 +583,16 @@
   }
 
   .stat-number {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
 
   .stat-label {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     letter-spacing: 0.5px;
   }
 
   .stat-divider {
-    height: 30px;
+    height: 40px;
   }
 
   .about-cta {
@@ -581,15 +602,72 @@
 
   .about-btn-primary {
     width: 100%;
-    padding: 0.9rem 1.8rem;
-    font-size: 0.9rem;
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
   }
 
   .about-experience-badge {
-    bottom: -10px;
+    bottom: -12px;
     right: 5px;
-    padding: 0.7rem 1rem;
-    border-radius: 12px;
+    padding: 0.9rem 1.2rem;
+    border-radius: 15px;
+  }
+
+  .badge-number {
+    font-size: 2.2rem;
+  }
+
+  .badge-text {
+    font-size: 0.9rem;
+  }
+
+  .about-image-container {
+    aspect-ratio: 4/3;
+    border-radius: 18px;
+  }
+}
+
+/* Extra small screens (below 320px) */
+@media (max-width: 320px) {
+  .overall-about-container {
+    padding: 3rem 0;
+  }
+
+  .about-section-label {
+    font-size: 1rem;
+  }
+
+  .about-title {
+    font-size: 2.6rem;
+  }
+
+  .about-description,
+  .about-description-second,
+  .about-description-third {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  .about-stats {
+    gap: 0.5rem;
+    padding: 1.2rem 0;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .stat-divider {
+    height: 30px;
+  }
+
+  .about-btn-primary {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
   }
 
   .badge-number {
@@ -606,72 +684,16 @@
   }
 }
 
-/* Extra small screens (below 320px) */
-@media (max-width: 320px) {
-  .overall-about-container {
-    padding: 2rem 0;
-  }
-
-  .about-section-label {
-    font-size: 0.8rem;
-  }
-
-  .about-title {
-    font-size: 2rem;
-  }
-
-  .about-description,
-  .about-description-second,
-  .about-description-third {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .about-stats {
-    gap: 0.3rem;
-    padding: 0.8rem 0;
-  }
-
-  .stat-number {
-    font-size: 1.4rem;
-  }
-
-  .stat-label {
-    font-size: 0.55rem;
-  }
-
-  .stat-divider {
-    height: 25px;
-  }
-
-  .about-btn-primary {
-    font-size: 0.8rem;
-    padding: 0.8rem 1.5rem;
-  }
-
-  .badge-number {
-    font-size: 1.5rem;
-  }
-
-  .badge-text {
-    font-size: 0.7rem;
-  }
-
-  .about-image-container {
-    aspect-ratio: 4/3;
-    border-radius: 12px;
-  }
-}
-
 /* Landscape orientation for mobile */
 @media (max-height: 600px) and (orientation: landscape) {
   .overall-about-container {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
   }
 
   .about-inner-wrapper {
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    gap: 3rem;
+    padding: 0 2rem;
   }
 
   .about-image-container {
@@ -680,27 +702,27 @@
   }
 
   .about-title {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
   }
 
   .about-description,
   .about-description-second,
   .about-description-third {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .about-stats {
     flex-direction: row;
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
   }
 
   .stat-number {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .stat-label {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .about-cta {
@@ -708,21 +730,25 @@
   }
 
   .about-btn-primary {
-    padding: 0.8rem 2.5rem;
-    font-size: 0.85rem;
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
   }
 
   .about-experience-badge {
-    bottom: -10px;
+    bottom: -12px;
     right: 5px;
-    padding: 0.7rem 1.2rem;
+    padding: 0.9rem 1.5rem;
   }
 
   .badge-number {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .badge-text {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .about-section-label {
+    font-size: 1.4rem;
   }
 }

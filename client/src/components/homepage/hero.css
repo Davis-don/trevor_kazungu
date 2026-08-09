@@ -59,24 +59,15 @@
   text-align: left;
 }
 
-/* Greeting text - Using header gradient */
+/* Greeting text - Clean white */
 .hero-greeting {
   font-size: 1.8rem;
   font-weight: 300;
-  background: linear-gradient(
-    90deg,
-    #ff8a00 0%,
-    #ff9f43 25%,
-    #ff7eb3 60%,
-    #7b4fff 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
-  text-shadow: none;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Title styling */
@@ -97,54 +88,22 @@
   margin-top: 0.5rem;
 }
 
-/* Typing text styling - Using header gradient */
+/* Typing text styling - Clean white */
 .hero-typing-text {
   font-size: 4.5rem;
   font-weight: 700;
-  background: linear-gradient(
-    90deg,
-    #ff8a00 0%,
-    #ff9f43 25%,
-    #ff7eb3 60%,
-    #7b4fff 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-size: 300% 100%;
+  color: #ffffff;
   letter-spacing: 2px;
-  animation: gradientMove 4s ease-in-out infinite;
-  text-shadow: none;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
 }
 
-/* Gradient animation */
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Cursor styling */
+/* Cursor styling - Clean white */
 .typed-cursor {
   font-size: 4.5rem;
-  background: linear-gradient(
-    90deg,
-    #ff8a00 0%,
-    #ff9f43 25%,
-    #ff7eb3 60%,
-    #7b4fff 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: blink 0.7s step-end infinite, gradientMove 4s ease-in-out infinite;
+  color: #ffffff;
+  animation: blink 0.7s step-end infinite;
   margin-left: 2px;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 @keyframes blink {
@@ -227,8 +186,7 @@
 .hero-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
-  border-color: #ff8a00;
-  color: #ff8a00;
+  border-color: #ffffff;
 }
 
 /* Fade-in animation for content */
@@ -388,12 +346,12 @@
   }
 
   .hero-greeting {
-    font-size: 2.2rem; /* Was 1.1rem - DOUBLED */
+    font-size: 2.2rem;
     letter-spacing: 3px;
   }
 
   .hero-title {
-    font-size: 5rem; /* Was 2.5rem - DOUBLED */
+    font-size: 5rem;
   }
 
   .hero-typing-wrapper {
@@ -401,15 +359,15 @@
   }
 
   .hero-typing-text {
-    font-size: 4.4rem; /* Was 2.2rem - DOUBLED */
+    font-size: 4.4rem;
   }
 
   .typed-cursor {
-    font-size: 4.4rem; /* Was 2.2rem - DOUBLED */
+    font-size: 4.4rem;
   }
 
   .hero-subtitle {
-    font-size: 2rem; /* Was 1rem - DOUBLED */
+    font-size: 2rem;
     margin-top: 1.5rem;
     line-height: 1.6;
   }
@@ -425,7 +383,7 @@
   .hero-btn-primary,
   .hero-btn-secondary {
     padding: 1.2rem 2.5rem;
-    font-size: 1.4rem; /* Was 0.75rem - DOUBLED */
+    font-size: 1.4rem;
     white-space: nowrap;
     width: auto;
     min-width: 200px;
@@ -452,13 +410,13 @@
   }
 
   .hero-greeting {
-    font-size: 1.8rem; /* Was 0.9rem - DOUBLED */
+    font-size: 1.8rem;
     letter-spacing: 3px;
     margin-bottom: 0.5rem;
   }
 
   .hero-title {
-    font-size: 4rem; /* Was 2rem - DOUBLED */
+    font-size: 4rem;
     margin-bottom: 0.5rem;
   }
 
@@ -468,15 +426,15 @@
   }
 
   .hero-typing-text {
-    font-size: 3.6rem; /* Was 1.8rem - DOUBLED */
+    font-size: 3.6rem;
   }
 
   .typed-cursor {
-    font-size: 3.6rem; /* Was 1.8rem - DOUBLED */
+    font-size: 3.6rem;
   }
 
   .hero-subtitle {
-    font-size: 1.7rem; /* Was 0.85rem - DOUBLED */
+    font-size: 1.7rem;
     margin-top: 1.2rem;
     line-height: 1.5;
   }
@@ -492,7 +450,7 @@
   .hero-btn-primary,
   .hero-btn-secondary {
     padding: 1rem 2rem;
-    font-size: 1.2rem; /* Was 0.7rem - DOUBLED */
+    font-size: 1.2rem;
     white-space: nowrap;
     min-width: 180px;
     width: auto;
@@ -516,20 +474,20 @@
   }
 
   .hero-greeting {
-    font-size: 1.6rem; /* Was 0.8rem - DOUBLED */
+    font-size: 1.6rem;
     letter-spacing: 2px;
   }
 
   .hero-title {
-    font-size: 3.2rem; /* Was 1.6rem - DOUBLED */
+    font-size: 3.2rem;
   }
 
   .hero-typing-text {
-    font-size: 2.8rem; /* Was 1.4rem - DOUBLED */
+    font-size: 2.8rem;
   }
 
   .typed-cursor {
-    font-size: 2.8rem; /* Was 1.4rem - DOUBLED */
+    font-size: 2.8rem;
   }
 
   .hero-typing-wrapper {
@@ -537,7 +495,7 @@
   }
 
   .hero-subtitle {
-    font-size: 1.5rem; /* Was 0.75rem - DOUBLED */
+    font-size: 1.5rem;
   }
 
   .hero-cta {
@@ -549,7 +507,7 @@
   .hero-btn-primary,
   .hero-btn-secondary {
     padding: 0.8rem 1.5rem;
-    font-size: 1rem; /* Was 0.65rem - DOUBLED */
+    font-size: 1rem;
     min-width: 150px;
   }
 }
