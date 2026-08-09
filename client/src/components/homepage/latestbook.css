@@ -1,0 +1,640 @@
+/* ============================================
+   MAIN CONTAINER
+   ============================================ */
+.overall-latestbook-container {
+  width: 100%;
+  padding: 7rem 0;
+  background: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background glow */
+.overall-latestbook-container::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 50%;
+  height: 80%;
+  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ============================================
+   INNER WRAPPER
+   ============================================ */
+.latestbook-inner-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   CONTENT SECTION - DOUBLED FONT SIZES
+   ============================================ */
+.latestbook-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.latestbook-section-label {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 0.3rem;
+}
+
+.latestbook-title {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.latestbook-title-highlight {
+  color: #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 0.2rem;
+}
+
+.latestbook-divider {
+  width: 120px;
+  height: 4px;
+  background: #ffffff;
+  margin: 0.5rem 0;
+  border-radius: 2px;
+}
+
+.latestbook-description {
+  font-size: 2.2rem;
+  color: #cccccc;
+  line-height: 2.2;
+  margin: 0;
+  font-weight: 300;
+}
+
+.latestbook-description-second {
+  font-size: 2.2rem;
+  color: #cccccc;
+  line-height: 2.2;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ============================================
+   FEATURES SECTION - DOUBLED FONT SIZES
+   ============================================ */
+.latestbook-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 2rem;
+  margin-top: 0.5rem;
+  padding: 2.5rem 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.feature-icon {
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  color: #cccccc;
+  font-weight: 300;
+}
+
+/* ============================================
+   CTA BUTTON - DOUBLED FONT SIZES
+   ============================================ */
+.latestbook-btn-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.latestbook-btn-primary {
+  padding: 1.8rem 4.5rem;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 60px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.latestbook-btn-primary:hover {
+  background: #333333;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   IMAGE SECTION
+   ============================================ */
+.latestbook-image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latestbook-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 4/5;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+  background: #000000;
+}
+
+.latestbook-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.latestbook-image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Image overlay */
+.latestbook-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  pointer-events: none;
+}
+
+/* Decorative border */
+.latestbook-image-border {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.latestbook-image-container:hover .latestbook-image-border {
+  top: -18px;
+  left: -18px;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* New Release Badge - DOUBLED FONT SIZES */
+.latestbook-badge {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background: #ffffff;
+  color: #000000;
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  animation: pulseBadge 2s ease-in-out infinite;
+  z-index: 5;
+}
+
+@keyframes pulseBadge {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - DOUBLED FONT SIZES
+   ============================================ */
+
+/* Large screens (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .latestbook-inner-wrapper {
+    gap: 4rem;
+    padding: 0 2.5rem;
+  }
+
+  .latestbook-title {
+    font-size: 4.5rem;
+  }
+
+  .latestbook-description,
+  .latestbook-description-second {
+    font-size: 1.8rem;
+  }
+
+  .latestbook-image-container {
+    max-width: 420px;
+  }
+
+  .feature-text {
+    font-size: 1.5rem;
+  }
+
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+
+  .latestbook-btn-primary {
+    padding: 1.5rem 3.5rem;
+    font-size: 1.5rem;
+  }
+
+  .latestbook-section-label {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  .overall-latestbook-container {
+    padding: 5rem 0;
+  }
+
+  .latestbook-inner-wrapper {
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .latestbook-title {
+    font-size: 4rem;
+  }
+
+  .latestbook-description,
+  .latestbook-description-second {
+    font-size: 1.6rem;
+  }
+
+  .latestbook-image-container {
+    max-width: 380px;
+  }
+
+  .latestbook-features {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+
+  .feature-text {
+    font-size: 1.4rem;
+  }
+
+  .feature-icon {
+    font-size: 1.6rem;
+  }
+
+  .latestbook-btn-primary {
+    padding: 1.3rem 3rem;
+    font-size: 1.3rem;
+  }
+
+  .latestbook-section-label {
+    font-size: 1.4rem;
+  }
+
+  .latestbook-badge {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet screens (600px - 768px) */
+@media (max-width: 768px) {
+  .overall-latestbook-container {
+    padding: 4.5rem 0;
+  }
+
+  .latestbook-inner-wrapper {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+
+  .latestbook-image-wrapper {
+    order: -1;
+  }
+
+  .latestbook-image-container {
+    max-width: 350px;
+    aspect-ratio: 4/5;
+  }
+
+  .latestbook-content-wrapper {
+    text-align: center;
+    align-items: center;
+  }
+
+  .latestbook-title {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+
+  .latestbook-divider {
+    margin: 0.5rem auto;
+  }
+
+  .latestbook-description,
+  .latestbook-description-second {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .latestbook-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+  .feature-item {
+    justify-content: center;
+  }
+
+  .feature-text {
+    font-size: 1.5rem;
+  }
+
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+
+  .latestbook-btn-primary {
+    padding: 1.4rem 4rem;
+    font-size: 1.5rem;
+  }
+
+  .latestbook-section-label {
+    font-size: 1.6rem;
+  }
+
+  .latestbook-badge {
+    top: -12px;
+    right: -5px;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile screens (480px - 600px) */
+@media (max-width: 600px) {
+  .overall-latestbook-container {
+    padding: 3.5rem 0;
+  }
+
+  .latestbook-inner-wrapper {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .latestbook-image-container {
+    max-width: 280px;
+  }
+
+  .latestbook-title {
+    font-size: 3.5rem;
+  }
+
+  .latestbook-description,
+  .latestbook-description-second {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  .latestbook-features {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1.5rem 0;
+  }
+
+  .feature-item {
+    justify-content: center;
+  }
+
+  .feature-text {
+    font-size: 1.3rem;
+  }
+
+  .feature-icon {
+    font-size: 1.5rem;
+  }
+
+  .latestbook-btn-primary {
+    padding: 1.2rem 3rem;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  .latestbook-section-label {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+  }
+
+  .latestbook-badge {
+    top: -8px;
+    right: 0px;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .latestbook-divider {
+    width: 100px;
+  }
+}
+
+/* Small mobile screens (320px - 480px) */
+@media (max-width: 480px) {
+  .overall-latestbook-container {
+    padding: 3rem 0;
+  }
+
+  .latestbook-inner-wrapper {
+    gap: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .latestbook-image-container {
+    max-width: 240px;
+  }
+
+  .latestbook-section-label {
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+  }
+
+  .latestbook-title {
+    font-size: 3rem;
+  }
+
+  .latestbook-description,
+  .latestbook-description-second {
+    font-size: 1.4rem;
+    line-height: 1.9;
+  }
+
+  .latestbook-features {
+    gap: 0.6rem;
+    padding: 1.2rem 0;
+  }
+
+  .feature-text {
+    font-size: 1.1rem;
+  }
+
+  .feature-icon {
+    font-size: 1.3rem;
+  }
+
+  .latestbook-btn-primary {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .latestbook-badge {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small screens (below 320px) */
+@media (max-width: 320px) {
+  .overall-latestbook-container {
+    padding: 2.5rem 0;
+  }
+
+  .latestbook-image-container {
+    max-width: 200px;
+  }
+
+  .latestbook-title {
+    font-size: 2.5rem;
+  }
+
+  .latestbook-description,
+  .latestbook-description-second {
+    font-size: 1.2rem;
+  }
+
+  .feature-text {
+    font-size: 1rem;
+  }
+
+  .feature-icon {
+    font-size: 1.1rem;
+  }
+
+  .latestbook-btn-primary {
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+  }
+
+  .latestbook-section-label {
+    font-size: 1rem;
+  }
+
+  .latestbook-badge {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+  .overall-latestbook-container {
+    padding: 3rem 0;
+  }
+
+  .latestbook-inner-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  .latestbook-image-container {
+    max-width: 200px;
+  }
+
+  .latestbook-title {
+    font-size: 3rem;
+  }
+
+  .latestbook-description,
+  .latestbook-description-second {
+    font-size: 1.4rem;
+  }
+
+  .latestbook-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1.2rem 0;
+  }
+
+  .feature-text {
+    font-size: 1.1rem;
+  }
+
+  .feature-icon {
+    font-size: 1.3rem;
+  }
+
+  .latestbook-btn-primary {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  .latestbook-section-label {
+    font-size: 1.2rem;
+  }
+
+  .latestbook-badge {
+    top: -8px;
+    right: -5px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
