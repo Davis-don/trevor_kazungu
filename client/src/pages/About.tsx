@@ -1,9 +1,12 @@
 import './about.css'
+import Hero from '../components/about/Hero'
+import Moreabout from '../components/about/Moreabout'
 
 function About() {
   return (
     <div className="overall-about-page-container">
-        <h1>About page here</h1>
+        <Hero/>
+        <Moreabout/>
     </div>
   )
 }
