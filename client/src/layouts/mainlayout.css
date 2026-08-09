@@ -1,34 +1,123 @@
+/* ============================================
+   MAIN LAYOUT CONTAINER
+   ============================================ */
 .main-layout-content-container {
   width: 100%;
   position: relative;
+  min-height: 100vh;
 }
 
-/* Children stay in normal document flow */
+/* ============================================
+   CHILDREN CONTAINER - Normal Flow
+   ============================================ */
 .actual-children-container {
   width: 100%;
-  position: relative; /* sidebar positions relative to this */
+  position: relative;
   z-index: 1;
 }
 
-/* Sidebar overlays ONLY the children section */
+/* ============================================
+   SIDEBAR - Fixed Position (Stays in place)
+   ============================================ */
 .sidebar-links-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 20;
+  position: fixed;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-/* Footer remains below all content */
+.sidebar-links-container > * {
+  pointer-events: auto;
+}
+
+/* ============================================
+   SIDEBAR ANIMATION (Optional)
+   ============================================ */
+.sidebar-links-container {
+  animation: sidebarFadeIn 0.5s ease-in-out;
+}
+
+@keyframes sidebarFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
 .footer-main-layout {
   width: 100%;
   position: relative;
   z-index: 1;
 }
 
-/* Hide sidebar overlay on desktop */
+/* ============================================
+   HIDE SIDEBAR ON DESKTOP
+   ============================================ */
 @media (min-width: 62.5em) {
   .sidebar-links-container {
     display: none;
+  }
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+/* Tablet and smaller screens (1024px and below) */
+@media (max-width: 62.5em) {
+  .sidebar-links-container {
+    right: 20px;
+  }
+}
+
+/* Mobile screens (768px and below) */
+@media (max-width: 48em) {
+  .sidebar-links-container {
+    right: 16px;
+    gap: 0.4rem;
+  }
+}
+
+/* Small mobile screens (480px and below) */
+@media (max-width: 30em) {
+  .sidebar-links-container {
+    right: 12px;
+    gap: 0.3rem;
+  }
+}
+
+/* Extra small screens (320px and below) */
+@media (max-width: 20em) {
+  .sidebar-links-container {
+    right: 8px;
+    gap: 0.2rem;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sidebar-links-container {
+    right: 16px;
+    gap: 0.3rem;
+  }
+}
+
+/* High DPI / Retina screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .sidebar-links-container {
+    right: 22px;
   }
 }
