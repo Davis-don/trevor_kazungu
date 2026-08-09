@@ -1,9 +1,12 @@
 import './contact.css'
+import Hero from '../components/contact/Hero'
+import Contactdetail from '../components/contact/Contactdetail'
 
 function Contact() {
   return (
     <div className="overall-contact-page-container">
-        <h1>Contact page</h1>
+        <Hero/>
+        <Contactdetail/>
     </div>
   )
 }

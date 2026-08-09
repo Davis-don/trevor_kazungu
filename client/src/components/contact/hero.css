@@ -1,0 +1,317 @@
+/* ============================================
+   MAIN CONTAINER
+   ============================================ */
+.overall-contact-hero-container {
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* ============================================
+   BACKGROUND IMAGE - TOP CENTER
+   ============================================ */
+.contact-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contact-hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.70) 40%,
+    rgba(0, 0, 0, 0.40) 70%,
+    rgba(0, 0, 0, 0.20) 100%
+  );
+}
+
+/* ============================================
+   CONTENT
+   ============================================ */
+.contact-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: 100%;
+}
+
+.contact-hero-text-wrapper {
+  max-width: 650px;
+}
+
+.contact-hero-label {
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 300;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-hero-title {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.contact-hero-divider {
+  width: 80px;
+  height: 4px;
+  background: #ffffff;
+  margin: 1.2rem 0;
+}
+
+.contact-hero-description {
+  font-size: 1.6rem;
+  color: #e0e0e0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Large screens (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .overall-contact-hero-container {
+    height: 45vh;
+    min-height: 280px;
+  }
+
+  .contact-hero-content {
+    padding: 0 3rem;
+  }
+
+  .contact-hero-title {
+    font-size: 4.5rem;
+  }
+
+  .contact-hero-description {
+    font-size: 1.4rem;
+  }
+
+  .contact-hero-label {
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+  }
+}
+
+/* Tablet screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  .overall-contact-hero-container {
+    height: 40vh;
+    min-height: 250px;
+  }
+
+  .contact-hero-content {
+    padding: 0 2.5rem;
+  }
+
+  .contact-hero-title {
+    font-size: 4rem;
+  }
+
+  .contact-hero-description {
+    font-size: 1.3rem;
+  }
+
+  .contact-hero-label {
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+  }
+
+  .contact-hero-divider {
+    width: 60px;
+    height: 4px;
+    margin: 1rem 0;
+  }
+
+  .contact-hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.70) 50%,
+      rgba(0, 0, 0, 0.50) 80%,
+      rgba(0, 0, 0, 0.30) 100%
+    );
+  }
+}
+
+/* Mobile screens (480px - 768px) */
+@media (max-width: 768px) {
+  .overall-contact-hero-container {
+    height: 40vh;
+    min-height: 350px;
+  }
+
+  .contact-hero-content {
+    padding: 0 2rem;
+  }
+
+  .contact-hero-text-wrapper {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-hero-label {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+
+  .contact-hero-title {
+    font-size: 3.5rem;
+  }
+
+  .contact-hero-divider {
+    margin: 1rem auto;
+  }
+
+  .contact-hero-description {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.30) 0%,
+      rgba(0, 0, 0, 0.60) 30%,
+      rgba(0, 0, 0, 0.80) 60%,
+      rgba(0, 0, 0, 0.90) 100%
+    );
+  }
+}
+
+/* Small mobile screens (320px - 480px) */
+@media (max-width: 480px) {
+  .overall-contact-hero-container {
+    height: 35vh;
+    min-height: 300px;
+  }
+
+  .contact-hero-content {
+    padding: 0 1.5rem;
+  }
+
+  .contact-hero-label {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+  }
+
+  .contact-hero-title {
+    font-size: 2.8rem;
+  }
+
+  .contact-hero-divider {
+    width: 50px;
+    height: 3px;
+    margin: 0.8rem auto;
+  }
+
+  .contact-hero-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Extra small screens (below 320px) */
+@media (max-width: 320px) {
+  .overall-contact-hero-container {
+    height: 30vh;
+    min-height: 250px;
+  }
+
+  .contact-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero-description {
+    font-size: 1rem;
+  }
+
+  .contact-hero-label {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
+
+  .contact-hero-divider {
+    width: 40px;
+    height: 3px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .overall-contact-hero-container {
+    height: 80vh;
+    min-height: 250px;
+  }
+
+  .contact-hero-content {
+    padding: 0 3rem;
+  }
+
+  .contact-hero-title {
+    font-size: 3.5rem;
+  }
+
+  .contact-hero-description {
+    font-size: 1.2rem;
+  }
+
+  .contact-hero-label {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+
+  .contact-hero-divider {
+    margin: 0.8rem 0;
+  }
+
+  .contact-hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.70) 40%,
+      rgba(0, 0, 0, 0.40) 70%,
+      rgba(0, 0, 0, 0.20) 100%
+    );
+  }
+}
+
+/* High DPI / Retina screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .contact-hero-background img {
+    image-rendering: auto;
+  }
+}
