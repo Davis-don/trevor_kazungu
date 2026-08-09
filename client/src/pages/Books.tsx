@@ -1,8 +1,9 @@
 import './books.css'
+import Hero from '../components/books/Hero'
 function Books() {
   return (
     <div className="overall-bools-page-container">
-        <h1>Books page</h1>
+      <Hero />
     </div>
   )
 }
