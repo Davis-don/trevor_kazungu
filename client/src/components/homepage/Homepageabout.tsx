@@ -1,5 +1,6 @@
 import './homepageabout.css'
 import germantutor from '../../assets/images/IMG_0197.jpg'
+import { Link } from 'react-router-dom'
 
 function Homepageabout() {
   return (
@@ -48,6 +49,7 @@ function Homepageabout() {
             impact and empowering others to reach their full potential.
           </p>
 
+          {/* Stats in a row */}
           <div className="about-stats">
             <div className="stat-item">
               <span className="stat-number">5+</span>
@@ -65,9 +67,11 @@ function Homepageabout() {
             </div>
           </div>
 
+          {/* Single Contact Button */}
           <div className="about-cta">
-            <button className="about-btn-primary">Connect With Trevor</button>
-            <button className="about-btn-secondary">Explore Services</button>
+            <Link to="/contact" className="about-btn-link">
+              <button className="about-btn-primary">Get In Touch</button>
+            </Link>
           </div>
         </div>
       </div>
