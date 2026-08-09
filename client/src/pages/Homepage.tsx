@@ -1,9 +1,10 @@
 import './homepage.css'
+import Hero from '../components/homepage/Hero'
 
 function Homepage() {
   return (
     <div className="overall-homepage-container">
-      <h1>This is the homepage</h1>
+      <Hero />
     </div>
   )
 }

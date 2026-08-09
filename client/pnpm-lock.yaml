@@ -20,6 +20,9 @@ importers:
       react-router-dom:
         specifier: ^7.18.2
         version: 7.18.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      react-typed:
+        specifier: ^2.0.12
+        version: 2.0.12(react@19.2.8)
       zustand:
         specifier: ^5.0.14
         version: 5.0.14(@types/react@19.2.18)(react@19.2.8)
@@ -829,6 +832,11 @@ packages:
       react-dom:
         optional: true
 
+  react-typed@2.0.12:
+    resolution: {integrity: sha512-sn59lrb4NKgvQLDGBRWM4wRNEz5Fp37F0BrLA2cKUmDqPSyQJOOiFigz+6wJof0o99QoE16nVCa3B3ID34ejsg==}
+    peerDependencies:
+      react: '>16.8.0'
+
   react@19.2.8:
     resolution: {integrity: sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==}
     engines: {node: '>=0.10.0'}
@@ -878,6 +886,9 @@ packages:
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
+
+  typed.js@2.1.0:
+    resolution: {integrity: sha512-bDuXEf7YcaKN4g08NMTUM6G90XU25CK3bh6U0THC/Mod/QPKlEt9g/EjvbYB8x2Qwr2p6J6I3NrsoYaVnY6wsQ==}
 
   typescript-eslint@8.66.0:
     resolution: {integrity: sha512-QlEbBPz/RuJ1XUHj29nm3t0F/O/cSlEnntozqPOYHnnTGAXFamnMBu5i9Vn6vhUPHGAjR+Vl+5J8vPN/BMUrJw==}
@@ -1697,6 +1708,11 @@ snapshots:
     optionalDependencies:
       react-dom: 19.2.8(react@19.2.8)
 
+  react-typed@2.0.12(react@19.2.8):
+    dependencies:
+      react: 19.2.8
+      typed.js: 2.1.0
+
   react@19.2.8: {}
 
   rolldown@1.2.3:
@@ -1747,6 +1763,8 @@ snapshots:
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
+
+  typed.js@2.1.0: {}
 
   typescript-eslint@8.66.0(eslint@10.8.1)(typescript@6.0.3):
     dependencies:
