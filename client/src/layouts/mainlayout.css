@@ -1,0 +1,20 @@
+.main-layout-content-container{
+position: relative;
+}
+
+.actual-children-container{
+position:absolute;
+width:100%;
+top:0;
+z-index: 1;
+}
+.sidebar-links-container{
+position: fixed;
+width: 100%;
+z-index: 2;
+}
+@media (min-width: 62.5em) {
+.sidebar-links-container{
+display:none;
+}
+}

@@ -1,15 +1,17 @@
-import './navlink.css'
-import { LuMenu } from 'react-icons/lu'
-import { IoClose } from 'react-icons/io5'
+import './sidebar.css'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useMountSidebar } from '../../store/mountSidebar'
 
-function Navlinks() {
-  const { toggle, isMounted } = useMountSidebar()
+function Sidebar() {
+  const { toggle } = useMountSidebar()
   const navigate = useNavigate()
   const location = useLocation()
 
   const handleNavigate = (path: string) => {
+    // close/open sidebar
+    toggle()
+
+    // navigate to page
     navigate(path)
 
     // smooth scroll to top after navigation
@@ -22,42 +24,38 @@ function Navlinks() {
   }
 
   return (
-    <div className="overall-navlink-container">
-      <ul className="navlink-list">
+    <div className="overall-sidebar-container">
+      <ul className="navlink-list-sidebar">
         <li
-          className={location.pathname === '/' ? 'active-link' : ''}
+          className={location.pathname === '/' ? 'sidebar-active-link' : ''}
           onClick={() => handleNavigate('/')}
         >
-          HOME
+          Home
         </li>
 
         <li
-          className={location.pathname === '/books' ? 'active-link' : ''}
+          className={location.pathname === '/books' ? 'sidebar-active-link' : ''}
           onClick={() => handleNavigate('/books')}
         >
-          BOOKS
+          Books
         </li>
 
         <li
-          className={location.pathname === '/about' ? 'active-link' : ''}
+          className={location.pathname === '/about' ? 'sidebar-active-link' : ''}
           onClick={() => handleNavigate('/about')}
         >
-          ABOUT
+          About
         </li>
 
         <li
-          className={location.pathname === '/contact' ? 'active-link' : ''}
+          className={location.pathname === '/contact' ? 'sidebar-active-link' : ''}
           onClick={() => handleNavigate('/contact')}
         >
-          CONTACT
+          Contact
         </li>
       </ul>
-
-      <div className="side-bar-container" onClick={toggle}>
-        {isMounted ? <IoClose /> : <LuMenu />}
-      </div>
     </div>
   )
 }
 
-export default Navlinks
+export default Sidebar
