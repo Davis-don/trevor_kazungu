@@ -16,11 +16,16 @@ function Header() {
       // Add shadow when scrolled
       setIsScrolled(currentScrollY > 50)
       
-      // Hide/show header on scroll
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsHidden(true) // Scrolling down - hide header
+      // Only hide/show after scrolling past 100px
+      if (currentScrollY > 100) {
+        if (currentScrollY > lastScrollY) {
+          setIsHidden(true) // Scrolling down - hide header
+        } else {
+          setIsHidden(false) // Scrolling up - show header
+        }
       } else {
-        setIsHidden(false) // Scrolling up - show header
+        // Always show header when near the top
+        setIsHidden(false)
       }
       
       setLastScrollY(currentScrollY)
