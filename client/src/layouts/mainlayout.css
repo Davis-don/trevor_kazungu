@@ -1,20 +1,34 @@
-.main-layout-content-container{
-position: relative;
+.main-layout-content-container {
+  width: 100%;
+  position: relative;
 }
 
-.actual-children-container{
-position:absolute;
-width:100%;
-top:0;
-z-index: 1;
+/* Children stay in normal document flow */
+.actual-children-container {
+  width: 100%;
+  position: relative; /* sidebar positions relative to this */
+  z-index: 1;
 }
-.sidebar-links-container{
-position: fixed;
-width: 100%;
-z-index: 2;
+
+/* Sidebar overlays ONLY the children section */
+.sidebar-links-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
 }
+
+/* Footer remains below all content */
+.footer-main-layout {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hide sidebar overlay on desktop */
 @media (min-width: 62.5em) {
-.sidebar-links-container{
-display:none;
-}
+  .sidebar-links-container {
+    display: none;
+  }
 }
