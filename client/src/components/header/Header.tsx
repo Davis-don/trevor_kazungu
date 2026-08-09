@@ -1,9 +1,10 @@
 import './header.css'
+import Topheadersection from './Topheadersection'
 
 function Header() {
   return (
-    <div className="ovarall-main-header-component">
-        <h1>Header section</h1>
+    <div className="overall-main-header-component">
+        <Topheadersection />
     </div>
   )
 }
