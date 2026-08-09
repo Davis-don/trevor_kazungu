@@ -28,7 +28,7 @@ flex-direction: column;
 justify-content: center;
 padding: 1.5rem;
 background-color: #1c1c1c;
-margin-top: 1rem;
+margin-top: .5rem;
 }
 @media (min-width: 62.5em) {
 .side-bar-container{
