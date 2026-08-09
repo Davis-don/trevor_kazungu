@@ -70,10 +70,10 @@ function Hero() {
             literature, and mentorship
           </p>
           <div className="hero-cta">
-            <Link to="/books">
+            <Link to="/books" className="hero-btn-link">
               <button className="hero-btn-primary">Purchase a Book</button>
             </Link>
-            <Link to="/about">
+            <Link to="/about" className="hero-btn-link">
               <button className="hero-btn-secondary">Learn More</button>
             </Link>
           </div>
