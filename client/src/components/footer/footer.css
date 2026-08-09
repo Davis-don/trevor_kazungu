@@ -1,13 +1,16 @@
-.overall-footer-container{
-background-color: black;
-padding-block: 2rem;
+.overall-footer-container {
+  background-color: black;
+  padding-block: 2rem;
 }
-.botton-copyright-section{
-border-top: 1px solid white;
-padding-block: 1rem;
-margin-top: 1rem;
+
+.botton-copyright-section {
+  border-top: 1px solid white;
+  padding-block: 1rem;
+  margin-top: 1rem;
 }
-.overall-footer-container p{
-color: white;
-text-align: center;
+
+.overall-footer-container p {
+  color: white;
+  text-align: center;
+  margin: 0;
 }

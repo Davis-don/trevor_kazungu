@@ -5,10 +5,10 @@ function Footer() {
   return (
     <div className="overall-footer-container">
       <Brandname />
+
       <div className="botton-copyright-section">
-       <p>&copy; 2023 My App. All rights reserved.</p>
+        <p>© 2026 Trevor Dunah. All rights reserved.</p>
       </div>
-      
     </div>
   )
 }
