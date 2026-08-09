@@ -1,6 +1,7 @@
 import './header.css'
 import Topheadersection from './Topheadersection'
 import Brandname from './Brandname'
+import Navlinks from './Navlinks'
 
 function Header() {
   return (
@@ -8,10 +9,15 @@ function Header() {
       <div className="top-section-header-container">
   <Topheadersection />
       </div>
-        <div className="bottom-section-header-section-container">
+      <div className="container-section-bottom">
+     <div className="bottom-section-header-section-container">
            <Brandname />
           </div> 
-
+          <div className="navlinks-section-container">
+            <Navlinks />
+          </div>
+      </div>
+       
           </div>
   )
 }
