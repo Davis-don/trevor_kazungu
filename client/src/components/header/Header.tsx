@@ -1,11 +1,18 @@
 import './header.css'
 import Topheadersection from './Topheadersection'
+import Brandname from './Brandname'
 
 function Header() {
   return (
     <div className="overall-main-header-component">
-        <Topheadersection />
-    </div>
+      <div className="top-section-header-container">
+  <Topheadersection />
+      </div>
+        <div className="bottom-section-header-section-container">
+           <Brandname />
+          </div> 
+
+          </div>
   )
 }
 

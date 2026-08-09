@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.overall-header-brandname {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+.actual-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.actual-name h1 {
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400; /* only available weight */
+  font-style: normal;
+
+  /* Responsive size */
+  font-size: clamp(3.2rem, 8vw, 7rem);
+
+  /* Make it look thinner and cleaner */
+  letter-spacing: 0.05rem;
+  line-height: 1;
+
+  margin: 0;
+  padding: 0;
+
+  /* Softer rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
